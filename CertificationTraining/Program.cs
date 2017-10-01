@@ -11,6 +11,7 @@ namespace CertificationTraining
             Console.WriteLine("Hello World!");
 
             WorkingWithTypes.CompareValueTypesAndTheirAliases();
+            WorkingWithTypes.UsingValueTypes();
         }
     }
 }
