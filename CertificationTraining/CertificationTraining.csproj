@@ -35,6 +35,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Workspace\WorkingWithTypes.cs" />
+    <Compile Include="Workspace\Student.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Workspace\" />
