@@ -1,5 +1,7 @@
 ﻿using System;
 
+using CertificationTraining.Workspace;
+
 namespace CertificationTraining
 {
     class MainClass
@@ -7,6 +9,8 @@ namespace CertificationTraining
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            WorkingWithTypes.CompareValueTypesAndTheirAliases();
         }
     }
 }
