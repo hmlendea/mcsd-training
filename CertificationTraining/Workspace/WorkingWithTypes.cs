@@ -1,5 +1,8 @@
 ﻿using System;
 
+using CertificationTraining.Workspace.Classes;
+using CertificationTraining.Workspace.Structs;
+
 namespace CertificationTraining.Workspace
 {
     public static class WorkingWithTypes
@@ -94,7 +97,7 @@ namespace CertificationTraining.Workspace
 
         public static void TestBookStruct()
         {
-            Book book = new Book("Hello World", "Greetings", "Program", 5, 2, "insertIsbnHere", "Fancy");
+            BookStruct book = new BookStruct("Hello World", "Greetings", "Program", 5, 2, "insertIsbnHere", "Fancy");
 
             Console.WriteLine($"book.Title = {book.Title}");
             Console.WriteLine($"book.Category = {book.Category}");
@@ -122,6 +125,29 @@ namespace CertificationTraining.Workspace
             }
             Console.WriteLine($"book.Page = {book.Page}");
             Console.WriteLine();
+        }
+
+        public static void TestStudentClass()
+        {
+            StudentClass student1 = new StudentClass();
+            StudentClass.StudentCount += 1;
+
+            student1.FirstName = "Jon";
+            student1.LastName = "Snow";
+            student1.Grade = 4; // knows nothing
+
+            StudentClass student2 = new StudentClass("Tyrion", "Lannister", 10);
+            StudentClass.StudentCount += 1;
+
+            // Nope. static variables are contained by the class itself not by its instances
+            // student1.StudentCount += 1;
+
+            Console.WriteLine($"student1.FirstName = {student1.FirstName}");
+            Console.WriteLine($"student2.FirstName = {student2.FirstName}");
+            Console.WriteLine($"StudentClass.StudentCount = {StudentClass.StudentCount}");
+            Console.WriteLine();
+
+            Console.WriteLine($"student1.GetStudentDetails() = \"{student1.GetStudentDetails()}\"");
         }
     }
 }

@@ -1,12 +1,12 @@
-﻿namespace CertificationTraining.Workspace
+﻿namespace CertificationTraining.Workspace.Structs
 {
-    public struct Student
+    public struct StudentStruct
     {
         public string firstName;
         public string lastName;
         public double score1;
 
-        public Student(string first, string last)
+        public StudentStruct(string first, string last)
         {
             this.firstName = first;
             this.lastName = last;

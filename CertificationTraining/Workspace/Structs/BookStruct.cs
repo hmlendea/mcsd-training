@@ -1,6 +1,6 @@
-﻿namespace CertificationTraining.Workspace
+﻿namespace CertificationTraining.Workspace.Structs
 {
-    public struct Book
+    public struct BookStruct
     {
         /// <summary>
         /// The book title.
@@ -37,7 +37,7 @@
         /// </summary>
         public string CoverStyle;
 
-        public Book(string title, string category, string author, int pageCount, int page, string isbn, string coverStyle)
+        public BookStruct(string title, string category, string author, int pageCount, int page, string isbn, string coverStyle)
         {
             Title = title;
             Category = category;

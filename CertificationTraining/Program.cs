@@ -13,7 +13,8 @@ namespace CertificationTraining
 
             //WorkingWithTypes.CompareValueTypesAndTheirAliases();
             //WorkingWithTypes.UsingValueTypes();
-            WorkingWithTypes.TestBookStruct();
+            //WorkingWithTypes.TestBookStruct();
+            WorkingWithTypes.TestStudentClass();
         }
     }
 }
