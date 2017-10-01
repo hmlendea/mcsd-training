@@ -8,10 +8,12 @@ namespace CertificationTraining
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("*** MCSD Training samples and tests ***");
+            Console.WriteLine();
 
-            WorkingWithTypes.CompareValueTypesAndTheirAliases();
-            WorkingWithTypes.UsingValueTypes();
+            //WorkingWithTypes.CompareValueTypesAndTheirAliases();
+            //WorkingWithTypes.UsingValueTypes();
+            WorkingWithTypes.TestBookStruct();
         }
     }
 }

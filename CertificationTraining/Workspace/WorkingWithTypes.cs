@@ -91,5 +91,37 @@ namespace CertificationTraining.Workspace
             Console.WriteLine($" > size = {sizeof(bool)} bytes");
             Console.WriteLine();
         }
+
+        public static void TestBookStruct()
+        {
+            Book book = new Book("Hello World", "Greetings", "Program", 5, 2, "insertIsbnHere", "Fancy");
+
+            Console.WriteLine($"book.Title = {book.Title}");
+            Console.WriteLine($"book.Category = {book.Category}");
+            Console.WriteLine($"book.Author = {book.Author}");
+            Console.WriteLine($"book.PageCount = {book.PageCount}");
+            Console.WriteLine($"book.Page = {book.Page}");
+            Console.WriteLine($"book.ISBN = {book.ISBN}");
+            Console.WriteLine($"book.CoverStyle = {book.CoverStyle}");
+            Console.WriteLine();
+
+            Console.WriteLine("book.NextPage();");
+            book.NextPage();
+            Console.WriteLine($"book.Page = {book.Page}");
+            Console.WriteLine();
+
+            Console.WriteLine("book.PreviousPage();");
+            book.PreviousPage();
+            Console.WriteLine($"book.Page = {book.Page}");
+            Console.WriteLine();
+
+            Console.WriteLine("book.NextPage(); x10 times");
+            for (int i = 0; i < 10; i++)
+            {
+                book.NextPage();
+            }
+            Console.WriteLine($"book.Page = {book.Page}");
+            Console.WriteLine();
+        }
     }
 }
