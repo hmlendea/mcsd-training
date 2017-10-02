@@ -1,6 +1,7 @@
 ﻿using System;
 
 using CertificationTraining.Workspace.Classes;
+using CertificationTraining.Workspace.Extensions;
 using CertificationTraining.Workspace.Structs;
 
 namespace CertificationTraining.Workspace
@@ -153,6 +154,15 @@ namespace CertificationTraining.Workspace
             Console.WriteLine();
 
             Console.WriteLine($"student2.GetStudentDetails() = \"{student2.GetStudentDetails()}\"");
+        }
+
+        public static void TestExtensions()
+        {
+            int a = 2;
+            int b = a.GetSquare();
+
+            Console.WriteLine($"a = {a}");
+            Console.WriteLine($"a.GetSquare() = {b}");
         }
     }
 }
