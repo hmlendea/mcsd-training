@@ -40,7 +40,11 @@
     <Compile Include="Workspace\Structs\StudentStruct.cs" />
     <Compile Include="Workspace\Classes\StudentClass.cs" />
     <Compile Include="Workspace\Classes\IPAddress.cs" />
+    <Compile Include="Workspace\Enumerations\Month.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Workspace\Enumerations\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
