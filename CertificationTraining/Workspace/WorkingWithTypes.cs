@@ -133,10 +133,10 @@ namespace CertificationTraining.Workspace
             StudentClass student1 = new StudentClass();
             StudentClass.StudentCount += 1;
 
-            student1.FirstName = "Jon";
-            student1.LastName = "Snow";
-            student1.SchoolName = "Night's Watch";
-            student1.Grade = 4; // knows nothing
+            student1.firstName = "Jon";
+            student1.lastName = "Snow";
+            student1.schoolName = "Night's Watch";
+            student1.grade = 4; // knows nothing
 
             // SAMPLE: Class constructor
             StudentClass student2 = new StudentClass("Tyrion", "Lannister", "Școala vieții", 10);
@@ -155,9 +155,9 @@ namespace CertificationTraining.Workspace
             // This will work fine as the field belongs to the class itself
             StudentClass.StudentCount += 1;
 
-            Console.WriteLine($"student1.FirstName = {student1.FirstName}");
-            Console.WriteLine($"student2.FirstName = {student2.FirstName}");
-            Console.WriteLine($"student3.SchoolName = {student3.SchoolName}");
+            Console.WriteLine($"student1.FirstName = {student1.firstName}");
+            Console.WriteLine($"student2.FirstName = {student2.firstName}");
+            Console.WriteLine($"student3.SchoolName = {student3.schoolName}");
             Console.WriteLine($"StudentClass.StudentCount = {StudentClass.StudentCount}");
             Console.WriteLine();
 
@@ -172,6 +172,16 @@ namespace CertificationTraining.Workspace
 
             Console.WriteLine($"a = {a}");
             Console.WriteLine($"a.GetSquare() = {b}");
+        }
+
+        public static void TestIndexedProperties()
+        {
+            IPAddress myIP = new IPAddress();
+
+            for (int i = 0; i < 32; i++)
+            {
+                myIP[i] = 0;
+            }
         }
     }
 }

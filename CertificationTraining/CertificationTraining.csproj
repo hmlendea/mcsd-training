@@ -39,6 +39,7 @@
     <Compile Include="Workspace\Structs\BookStruct.cs" />
     <Compile Include="Workspace\Structs\StudentStruct.cs" />
     <Compile Include="Workspace\Classes\StudentClass.cs" />
+    <Compile Include="Workspace\Classes\IPAddress.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
