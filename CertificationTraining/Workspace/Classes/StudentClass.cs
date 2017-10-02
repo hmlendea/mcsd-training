@@ -8,16 +8,27 @@
 
         public string LastName;
 
+        public string SchoolName;
+
         public int Grade;
 
         public StudentClass()
         {
         }
 
-        public StudentClass(string firstName, string lastName, int grade)
+        public StudentClass(string firstName, string lastName, string schoolName)
         {
             FirstName = firstName;
             LastName = lastName;
+            SchoolName = schoolName;
+            Grade = -1;
+        }
+
+        public StudentClass(string firstName, string lastName, string schoolName, int grade)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            SchoolName = schoolName;
             Grade = grade;
         }
 
@@ -28,7 +39,7 @@
 
         public string GetStudentDetails()
         {
-            return $"{GetFullName()}; Grade {Grade}";
+            return $"Name={GetFullName()}; School={SchoolName}; Grade={Grade}";
         }
     }
 }

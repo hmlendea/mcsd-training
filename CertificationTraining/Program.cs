@@ -15,6 +15,8 @@ namespace CertificationTraining
             //WorkingWithTypes.UsingValueTypes();
             //WorkingWithTypes.TestBookStruct();
             WorkingWithTypes.TestStudentClass();
+
+            Console.ReadKey();
         }
     }
 }

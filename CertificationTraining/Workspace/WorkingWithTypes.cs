@@ -134,9 +134,13 @@ namespace CertificationTraining.Workspace
 
             student1.FirstName = "Jon";
             student1.LastName = "Snow";
+            student1.SchoolName = "Night's Watch";
             student1.Grade = 4; // knows nothing
 
-            StudentClass student2 = new StudentClass("Tyrion", "Lannister", 10);
+            StudentClass student2 = new StudentClass("Tyrion", "Lannister", "Școala vieții", 10);
+            StudentClass.StudentCount += 1;
+
+            StudentClass student3 = new StudentClass("New", "Student", "School");
             StudentClass.StudentCount += 1;
 
             // Nope. static variables are contained by the class itself not by its instances
@@ -144,10 +148,11 @@ namespace CertificationTraining.Workspace
 
             Console.WriteLine($"student1.FirstName = {student1.FirstName}");
             Console.WriteLine($"student2.FirstName = {student2.FirstName}");
+            Console.WriteLine($"student3.SchoolName = {student3.SchoolName}");
             Console.WriteLine($"StudentClass.StudentCount = {StudentClass.StudentCount}");
             Console.WriteLine();
 
-            Console.WriteLine($"student1.GetStudentDetails() = \"{student1.GetStudentDetails()}\"");
+            Console.WriteLine($"student2.GetStudentDetails() = \"{student2.GetStudentDetails()}\"");
         }
     }
 }
