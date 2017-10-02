@@ -138,14 +138,22 @@ namespace CertificationTraining.Workspace
             student1.SchoolName = "Night's Watch";
             student1.Grade = 4; // knows nothing
 
+            // SAMPLE: Class constructor
             StudentClass student2 = new StudentClass("Tyrion", "Lannister", "Școala vieții", 10);
             StudentClass.StudentCount += 1;
 
+            // SAMPLE: Method overloading
             StudentClass student3 = new StudentClass("New", "Student", "School");
             StudentClass.StudentCount += 1;
 
-            // Nope. static variables are contained by the class itself not by its instances
-            // student1.StudentCount += 1;
+            // SAMPLE: Named parameters
+            StudentClass student4 = new StudentClass(lastName: "Last", schoolName: "School", firstName: "First");
+
+            // SAMPLE: Static fields
+            // Wont' work. static variables are contained by the class itself not by its instances
+            // student4.StudentCount += 1;
+            // This will work fine as the field belongs to the class itself
+            StudentClass.StudentCount += 1;
 
             Console.WriteLine($"student1.FirstName = {student1.FirstName}");
             Console.WriteLine($"student2.FirstName = {student2.FirstName}");
@@ -153,6 +161,7 @@ namespace CertificationTraining.Workspace
             Console.WriteLine($"StudentClass.StudentCount = {StudentClass.StudentCount}");
             Console.WriteLine();
 
+            // SAMPLE: Class methods - call
             Console.WriteLine($"student2.GetStudentDetails() = \"{student2.GetStudentDetails()}\"");
         }
 

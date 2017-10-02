@@ -32,14 +32,16 @@
             Grade = grade;
         }
 
-        public string GetFullName()
-        {
-            return $"{LastName}, {FirstName}";
-        }
-
+        // SAMPLE: Class methods - implementation
         public string GetStudentDetails()
         {
             return $"Name={GetFullName()}; School={SchoolName}; Grade={Grade}";
+        }
+
+        // SAMPLE: Class methods - calling a method from withing a method
+        private string GetFullName()
+        {
+            return $"{LastName}, {FirstName}";
         }
     }
 }
