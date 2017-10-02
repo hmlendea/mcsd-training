@@ -186,6 +186,8 @@ namespace CertificationTraining.Workspace
 
         public static void BoxingAndUnboxing()
         {
+            // SAMPLE: Boxing and unboxing
+
             int a = 873;
             object obj = a;
             int b = (int)obj;
@@ -197,6 +199,17 @@ namespace CertificationTraining.Workspace
 
             Console.WriteLine($"obj.GetType() = {obj.GetType()}");
             Console.WriteLine($"b = {b}");
+        }
+
+        public static void TypeConversion()
+        {
+            // SAMPLE: Type conversion - implicit
+            StudentStruct studentStruct = new StudentStruct("Gandalf", "Grey");
+            StudentClass studentClass = studentStruct;
+
+            Console.WriteLine("StudentStruct studentStruct = new StudentStruct(\"Gandalf\", \"Grey\");");
+            Console.WriteLine("StudentClass studentClass = studentStruct;");
+            Console.WriteLine($"studentClass.GetStudentDetails() = {studentClass.GetStudentDetails()}");
         }
     }
 }

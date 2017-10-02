@@ -17,7 +17,8 @@ namespace CertificationTraining
             //WorkingWithTypes.TestStudentClass();
             //WorkingWithTypes.TestExtensions();
             //WorkingWithTypes.TestIndexedProperties();
-            WorkingWithTypes.BoxingAndUnboxing();
+            //WorkingWithTypes.BoxingAndUnboxing();
+            WorkingWithTypes.TypeConversion();
 
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");

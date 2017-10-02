@@ -1,4 +1,6 @@
-﻿namespace CertificationTraining.Workspace.Structs
+﻿using CertificationTraining.Workspace.Classes;
+
+namespace CertificationTraining.Workspace.Structs
 {
     public struct StudentStruct
     {
@@ -19,6 +21,13 @@
         public void AssignScore1()
         {
             this.score1 = 2;
+        }
+
+        public static implicit operator StudentClass(StudentStruct studentStruct)
+        {
+            StudentClass student = new StudentClass(studentStruct.firstName, studentStruct.lastName, string.Empty);
+
+            return student;
         }
     }
 }
