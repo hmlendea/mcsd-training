@@ -1,6 +1,7 @@
 ﻿using System;
 
 using CertificationTraining.Workspace;
+using CertificationTraining.Workspace.Chapter2;
 
 namespace CertificationTraining
 {
@@ -17,9 +18,10 @@ namespace CertificationTraining
             //WorkingWithTypes.TestStudentClass();
             //WorkingWithTypes.TestExtensions();
             //WorkingWithTypes.TestIndexedProperties();
-            //WorkingWithTypes.BoxingAndUnboxing();
             //WorkingWithTypes.TypeConversion();
-            WorkingWithTypes.FlagsEnum();
+
+            //BoxingAndUnboxing.VerboseRun();
+            KeydEnumerations.VerboseRun();
 
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");

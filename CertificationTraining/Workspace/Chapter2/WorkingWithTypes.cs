@@ -1,7 +1,6 @@
 ﻿using System;
 
 using CertificationTraining.Workspace.Classes;
-using CertificationTraining.Workspace.Enumerations;
 using CertificationTraining.Workspace.Extensions;
 using CertificationTraining.Workspace.Structs;
 
@@ -185,23 +184,6 @@ namespace CertificationTraining.Workspace
             }
         }
 
-        public static void BoxingAndUnboxing()
-        {
-            // SAMPLE: Boxing and unboxing
-
-            int a = 873;
-            object obj = a;
-            int b = (int)obj;
-
-            Console.WriteLine($"int a = {a};");
-            Console.WriteLine($"object obj = a;");
-            Console.WriteLine($"int b = (int)obj;");
-            Console.WriteLine();
-
-            Console.WriteLine($"obj.GetType() = {obj.GetType()}");
-            Console.WriteLine($"b = {b}");
-        }
-
         public static void TypeConversion()
         {
             // SAMPLE: Type conversion - implicit
@@ -211,26 +193,6 @@ namespace CertificationTraining.Workspace
             Console.WriteLine("StudentStruct studentStruct = new StudentStruct(\"Gandalf\", \"Grey\");");
             Console.WriteLine("StudentClass studentClass = studentStruct;");
             Console.WriteLine($"studentClass.GetStudentDetails() = {studentClass.GetStudentDetails()}");
-        }
-
-        public static void FlagsEnum()
-        {
-            MonthWithFlags monthsWithFlags = (MonthWithFlags.January | MonthWithFlags.August);
-            MonthWithoutFlags monthsWithoutFlags = (MonthWithoutFlags.January | MonthWithoutFlags.August);
-
-            // The one without flags will equal "September" because 1 OR 8 = 9 (September)
-            // 0001 OR 1000 = 1001, which is 9 in base 10
-
-            Console.WriteLine("Both objects are set to `(MonthWithFlags.January | MonthWithFlags.August)`");
-            Console.WriteLine($"monthsWithFlags = {monthsWithFlags.ToString()}");
-            Console.WriteLine($"monthsWithoutFlags = {monthsWithoutFlags.ToString()}");
-            Console.WriteLine();
-
-            bool monthsWithFlagsContainsJanuary = (monthsWithFlags & MonthWithFlags.January) == MonthWithFlags.January;
-            bool monthWithoutFlagsContainsJanuary = (monthsWithoutFlags & MonthWithoutFlags.January) == MonthWithoutFlags.January;
-
-            Console.WriteLine($"monthsWithFlagsContainsJanuary = {monthsWithFlagsContainsJanuary}");
-            Console.WriteLine($"monthWithoutFlagsContainsJanuary = {monthWithoutFlagsContainsJanuary}");
         }
     }
 }

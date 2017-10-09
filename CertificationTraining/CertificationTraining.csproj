@@ -34,17 +34,17 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Workspace\Extensions\IntExtensions.cs" />
-    <Compile Include="Workspace\WorkingWithTypes.cs" />
-    <Compile Include="Workspace\Structs\BookStruct.cs" />
-    <Compile Include="Workspace\Structs\StudentStruct.cs" />
-    <Compile Include="Workspace\Classes\StudentClass.cs" />
-    <Compile Include="Workspace\Classes\IPAddress.cs" />
-    <Compile Include="Workspace\Enumerations\Month.cs" />
+    <Compile Include="Workspace\Chapter2\BoxingAndUnboxing.cs" />
+    <Compile Include="Workspace\Chapter2\ExplicitlyDerivedInterfaces.cs" />
+    <Compile Include="Workspace\Chapter2\Extensions\IntExtensions.cs" />
+    <Compile Include="Workspace\Chapter2\KeysEnumerations.cs" />
+    <Compile Include="Workspace\Chapter2\WorkingWithTypes.cs" />
+    <Compile Include="Workspace\Chapter2\Structs\BookStruct.cs" />
+    <Compile Include="Workspace\Chapter2\Structs\StudentStruct.cs" />
+    <Compile Include="Workspace\Chapter2\Classes\StudentClass.cs" />
+    <Compile Include="Workspace\Chapter2\Classes\IPAddress.cs" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Folder Include="Workspace\Enumerations\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

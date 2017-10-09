@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-namespace CertificationTraining.Workspace.Classes
+﻿namespace CertificationTraining.Workspace.Chapter2
 {
     // This is the answer for Question 3, page 148 of Exam Ref
 
