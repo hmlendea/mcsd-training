@@ -3,11 +3,15 @@
 namespace CertificationTraining.Workspace.Chapter2
 {
     // SAMPLE: Flags enum
-    // The values must be powers of true. This does not happen automatically when using the Flags attribute
+    // The values must be *manually* set to powers of 2.
+    // It does not happen automatically, even tho we are using the Flags attribute.
     [Flags]
     enum MonthWithFlags
     {
-        None = 0, // There must always be an equivalent of the "None" value because an AND operation with 0 will always result in 0 (false)
+        // There must always be an equivalent of the "None" value
+        // This is because an AND operation with 0 will always result in 0 (false)
+        None = 0,
+
         January = 1,
         February = 2,
         March = 4,
