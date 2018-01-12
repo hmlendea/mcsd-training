@@ -5,6 +5,7 @@ namespace CertificationTraining.Workspace.Chapter2
     // SAMPLE: Flags enum
     // The values must be *manually* set to powers of 2.
     // It does not happen automatically, even tho we are using the Flags attribute.
+    // Each bit position represents a flag. If we use powers of two, then they do not overlap.
     [Flags]
     enum MonthWithFlags
     {
@@ -62,6 +63,19 @@ namespace CertificationTraining.Workspace.Chapter2
 
             Console.WriteLine($"monthsWithFlagsContainsJanuary = {monthsWithFlagsContainsJanuary}");
             Console.WriteLine($"monthWithoutFlagsContainsJanuary = {monthWithoutFlagsContainsJanuary}");
+
+            Console.WriteLine("All possible combinations of values without FlagsAttribute:");
+            for (int val = 0; val <= 12; val++)
+            {
+                Console.WriteLine("{0,3} - {1:G}", val, (MonthWithoutFlags)val);
+            }
+            
+            Console.WriteLine("All possible combinations of values with FlagsAttribute:");
+            for (int val = 0; val <= 12; val++)
+            {
+                Console.WriteLine("{0,3} - {1:G}", val, (MonthWithFlags)val);
+            }
+            Console.WriteLine("Et cetera...");
         }
     }
 }

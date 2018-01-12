@@ -1,7 +1,7 @@
 ﻿using System;
 
-using CertificationTraining.Workspace;
 using CertificationTraining.Workspace.Chapter2;
+using CertificationTraining.Workspace.Others;
 
 namespace CertificationTraining
 {
@@ -12,6 +12,7 @@ namespace CertificationTraining
             Console.WriteLine("*** MCSD Training samples and tests ***");
             Console.WriteLine();
 
+            //// CHAPTER 2
             //WorkingWithTypes.CompareValueTypesAndTheirAliases();
             //WorkingWithTypes.UsingValueTypes();
             //WorkingWithTypes.TestBookStruct();
@@ -21,7 +22,12 @@ namespace CertificationTraining
             //WorkingWithTypes.TypeConversion();
 
             //BoxingAndUnboxing.VerboseRun();
-            KeydEnumerations.VerboseRun();
+            //KeydEnumerations.VerboseRun();
+            //Attributes.VerboseRun();
+            Reflection.VerboseRun();
+
+            //// OTHERS
+            //FormatedLoggerTests.VerboseRun();
 
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");
