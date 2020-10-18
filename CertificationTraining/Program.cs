@@ -7,7 +7,7 @@ namespace CertificationTraining
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("*** MCSD Training samples and tests ***");
             Console.WriteLine();

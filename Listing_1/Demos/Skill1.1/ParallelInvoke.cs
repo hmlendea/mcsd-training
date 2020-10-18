@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace Listing1.Demos
+namespace CertifV2.Demos
 {
     class ParallelInvoke
     {
@@ -23,8 +23,6 @@ namespace Listing1.Demos
         public static void Start()
         {
             Parallel.Invoke(() => Task1(), () => Task2());
-            Console.WriteLine("Finished processing. Press a key to end.");
-            Console.ReadKey();
         }
     }
 }

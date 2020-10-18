@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8478D489-AE09-4149-91A7-973A46B099D9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Listing_1</RootNamespace>
-    <AssemblyName>Listing_1</AssemblyName>
+    <RootNamespace>CertifV2</RootNamespace>
+    <AssemblyName>CertifV2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Listing1.Program</StartupObject>
+    <StartupObject>CertifV2.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,17 +45,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demos\ParallelFor_Break.cs" />
-    <Compile Include="Demos\ParallelFor_Stop.cs" />
-    <Compile Include="Demos\ParallelForEach.cs" />
-    <Compile Include="Demos\ParallelLinq.cs" />
+    <Compile Include="Demos\Listing2_29.cs" />
+    <Compile Include="Demos\Listing2_28.cs" />
+    <Compile Include="Demos\Listing2_27.cs" />
+    <Compile Include="Demos\Listing2_25.cs" />
+    <Compile Include="Demos\Skill1.1\ParallelFor_Break.cs" />
+    <Compile Include="Demos\Skill1.1\ParallelFor_Stop.cs" />
+    <Compile Include="Demos\Skill1.1\ParallelForEach.cs" />
+    <Compile Include="Demos\Skill1.1\ParallelLinq_AsSequential.cs" />
+    <Compile Include="Demos\Skill1.1\ParallelLinq.cs" />
+    <Compile Include="Demos\Listing1_46.cs" />
+    <Compile Include="Demos\Listing1_42.cs" />
+    <Compile Include="Demos\Listing1_41.cs" />
+    <Compile Include="Demos\Listing1_71.cs" />
+    <Compile Include="Demos\Listing1_70.cs" />
+    <Compile Include="Demos\Listing1_69.cs" />
+    <Compile Include="Demos\Listing1_68.cs" />
+    <Compile Include="Demos\Listing1_67.cs" />
+    <Compile Include="Demos\Listing1_66.cs" />
+    <Compile Include="Demos\Listing1_65.cs" />
+    <Compile Include="Demos\Listing1_76.cs" />
+    <Compile Include="Demos\Listing1_81.cs" />
+    <Compile Include="Demos\Listing1_80.cs" />
+    <Compile Include="Demos\Listing1_79.cs" />
+    <Compile Include="Demos\Listing1_78.cs" />
+    <Compile Include="Demos\Listing1_77.cs" />
+    <Compile Include="Demos\Listing2_24.cs" />
+    <Compile Include="Demos\Listing2_23.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Demos\ParallelFor.cs" />
-    <Compile Include="Demos\ParallelInvoke.cs" />
+    <Compile Include="Demos\Skill1.1\ParallelFor.cs" />
+    <Compile Include="Demos\Skill1.1\ParallelInvoke.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

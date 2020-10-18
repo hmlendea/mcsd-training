@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace Listing1.Demos
+namespace CertifV2.Demos
 {
     class ParallelForEach
     {
@@ -21,12 +21,6 @@ namespace Listing1.Demos
             {
                 WorkOnItem(item);
             });
-
-            Console.WriteLine("Finished processing. Press a key to end.");
-            Console.ReadKey();
-
-            Console.WriteLine("Finished processing. Press a key to end.");
-            Console.ReadKey();
         }
     }
 }

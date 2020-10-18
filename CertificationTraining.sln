@@ -4,7 +4,7 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificationTraining", "CertificationTraining\CertificationTraining.csproj", "{18C96887-2995-4234-9A01-01B6B85D34B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listing_1", "Listing_1\Listing_1.csproj", "{8478D489-AE09-4149-91A7-973A46B099D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertifV2", "Listing_1\CertifV2.csproj", "{8478D489-AE09-4149-91A7-973A46B099D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
